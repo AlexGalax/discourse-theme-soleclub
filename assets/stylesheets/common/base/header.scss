@@ -1,0 +1,95 @@
+#main-outlet{
+    @include has-shadow();
+    background: $background-outlet;
+}
+.d-header{
+    @include has-shadow(2);
+}
+.menu-panel, #share-link{
+    @include has-shadow();
+    border: none;
+    padding: 1em;
+}
+#share-link{
+    .social-link{
+        a{
+            color: $primary-color;
+        }
+    }
+}
+
+.drop-down-visible{
+    .d-header {
+        .icons {
+            .unread-notifications {
+                background: $secondary-text;
+                color: $secondary-color;
+            }
+            .active{
+                .icon{
+                    border: none;
+                }
+            }
+            .icon{
+                border: none;
+                &:hover{
+                    background: $secondary-text;
+                    color: $secondary-color;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.menu-panel{
+    &.drop-down{
+        -webkit-animation: fadeIn .3s;
+        animation: fadeIn .3s;
+    }
+    .menu-panel{
+        ul{
+            li.heading{
+                a{
+                    color: $default-text;
+                    &:hover{
+                        color: $secondary-color;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+    ul.menu-links{
+        li{
+            a{
+                color: $default-text;
+                &:hover{
+                    color: $secondary-color;
+                    background: none;
+                }
+            }
+            &.heading{
+                a{
+                    color: $default-text;
+                    &:hover{
+                        color: $secondary-color;
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.search-menu{
+    a{
+        color: $secondary-color;
+    }
+}
+div.menu-links-header .fa,
+div.menu-links-header a{
+    color: $default-text;
+    &:hover{
+        background: $secondary-color;
+    }
+}

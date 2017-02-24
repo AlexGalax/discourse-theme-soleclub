@@ -1,0 +1,217 @@
+/* BUTTONS */
+
+// no inset shadow for :active
+button:active{
+    @include no-shadow();
+}
+
+// all buttons with shadow and backgound
+.btn {
+    @include has-shadow();
+    @include is-material(default, true);
+    &.btn-primary,
+    &.create {
+        @include is-material(primary, true);
+    }
+    &.btn-social{
+        color: #FFF;
+        &.google, &.google_oauth2 {
+            &:hover{
+                background: $google;
+            }
+        }
+        &.instagram {
+            &:hover{
+                background: $instagram;
+            }
+        }
+        &.facebook {
+            &:hover{
+                background: $facebook;
+            }
+        }
+        &.cas {
+            &:hover{
+                background: $cas;
+            }
+        }
+        &.twitter {
+            &:hover{
+                background: $twitter;
+            }
+        }
+        &.yahoo {
+            &:hover{
+                background: $yahoo;
+            }
+        }
+        &.github {
+            &:hover{
+                background: $github;
+            }
+        }
+    }
+}
+
+// timeline buttons round
+.timeline-container {
+    .timeline-controls,
+    .timeline-footer-controls {
+        .btn {
+            &.no-text {
+                @include round-icon-button();
+            }
+        }
+    }
+}
+.topic-post.selected article.boxed .select-posts button
+.topic-post {
+    article.boxed{
+        .select-posts{
+            button{
+                @include is-material(primary, true);
+                @include has-shadow();
+                &.select-post{
+                    @include is-material(secondary, true);
+                    @include has-shadow();
+                }
+            }
+        }
+    }
+}
+
+.user-main{
+    .user-content{
+        .user-invite-controls{
+            button.btn{
+                @include is-material(primary, true);
+            }
+        }
+    }
+}
+
+.selected-posts {
+    .btn {
+        @include is-material(default, true);
+        @include no-shadow();
+    }
+    p{
+        &:nth-child(1) {
+            margin: 0;
+        }
+        &:nth-child(2) {
+            border-bottom: 1px solid get-border-color(default);
+            padding: 1em 0 0 0;
+            margin: 0;
+        }
+        &.cancel{
+            border-top: 1px solid get-border-color(default);
+            padding: 1em 0 0 0;
+            margin: 0;
+        }
+    }
+}
+
+#topic-footer-buttons {
+    .bookmark {
+        &.bookmarked{
+            .fa-bookmark {
+                color: $primary-color;
+            }
+        }
+    }
+}
+nav.post-controls {
+    button {
+        color: rgba($default-text, 0.5);
+        .read-icon.bookmarked{
+            &::before{
+                color: $primary-color;
+            }
+        }
+    }
+}
+.fa{
+    &.tracking,
+    &.watching{
+        color: $primary-color;
+    }
+}
+
+.category-admin-menu{
+    button{
+        @include round-icon-button();
+    }
+}
+#create-topic {
+    &.btn-default {
+        @include is-material(secondary);
+        @include has-shadow();
+        color: $secondary-color;
+        border-radius: 40px;
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+        z-index: 999;
+        padding: 24px 20px 22px 5px;
+        white-space: nowrap;
+        text-indent: 10px;
+        overflow: hidden;
+        width: 63px;
+        height: 63px;
+        -webkit-transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, -webkit-transform .5s;
+        transition: right .5s, bottom .5s, border-radius .5s, text-indent .2s, visibility 1s, width .2s ease, height .5s ease .4s, color .5s, background-color 2s, transform .5s;
+        .fa-plus {
+            color: $secondary-text;
+            margin: 0 10px 0 10px;
+            text-indent: 0;
+            transition: transform 0.4s ease-in-out;
+        }
+        &:hover {
+            color: $secondary-text;
+            text-indent: 8px;
+            width: 190px;
+            .fa-plus{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+/* buttons text style */
+.user-main {
+    .user-stream{
+        .remove-bookmark{
+            @include text-button();
+        }
+    }
+}
+.user-invite-list{
+    td{
+        .btn{
+            @include text-button();
+        }
+    }
+}
+.user-preferences{
+    .pref-password, .notifications{
+        .btn{
+            @include text-button();
+        }
+    }
+}
+.topic-list{
+    .bulk-select-all, .bulk-clear-all{
+        @include text-button();
+    }
+}
+
+
+/* icons only buttons round */
+.user-preferences{
+    .pref-card-badge, .pref-profile-bg, .pref-title, .pref-email, .pref-username, .pref-avatar{
+        .btn{
+            @include round-icon-button(30px, 30px);
+        }
+    }
+}
