@@ -1,0 +1,109 @@
+.user-nav{
+    margin: 1em 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.user-table{
+    margin: 1em 0 0 0;
+    display: block;
+    .wrapper{
+        display: block;
+    }
+}
+.user-navigation{
+    .btn{
+        width: 100%;
+    }
+}
+.user-right {
+    .list-actions {
+        .btn{
+            &.bulk-select{
+                @include round-icon-button();
+            }
+        }
+    }
+}
+div.ac-wrap{
+    border: none;
+    input[type=text]{
+        @include input-item();
+        background: inherit;
+    }
+}
+.user-main{
+    .about{
+        .secondary{
+            background: $default-color;
+            border: 1px solid get-border-color(default);
+            dt{
+                color: $disabled-text;
+                font-size: .85em;
+            }
+            dd{
+                margin: 0 1.5em 0 0;
+            }
+        }
+    }
+
+    .user-content{
+        padding: 0;
+        background: inherit;
+        .user-invite-controls{
+            background: inherit;
+            .span15{
+                margin: 0;
+            }
+        }
+        .user-invite-list{
+            @include table-material-style();
+            td, th{
+                padding: .5em;
+                border: none;
+            }
+        }
+        &.user-preferences{
+            @include is-material(default);
+            @include has-depth();
+            .btn.no-text{
+                //@include round-icon-button();
+            }
+            .tags{
+                .select2-container-multi{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .user-stream{
+        .item{
+            @include is-material(default);
+            @include has-depth();
+            margin-bottom: 1em;
+            &.deleted{
+                @include is-material(disabled);
+                @include has-depth(default, 1px, 2px);
+            }
+        }
+        .remove-bookmark{
+            margin-top: -1em;
+        }
+
+        .notification.unread{
+            @include has-depth(default, 4px, 6px);
+            background-color: $default-color;
+        }
+    }
+}
+.stats-section{
+    ul{
+        @include is-material(default);
+        @include has-depth();
+    }
+}
+.top-sub-section{
+    li{
+        @include is-material(default);
+        @include has-depth();
+    }
+}
