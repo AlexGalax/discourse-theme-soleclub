@@ -111,6 +111,7 @@ nav.post-controls {
     h1{
         @include has-depth();
         @include is-material(secondary);
+        padding-bottom: calc(.5em + 15px);
         a, .fa-thumb-tack.unpinned{
             color: $secondary-text;
         }
@@ -120,6 +121,20 @@ nav.post-controls {
         transition: opacity .3s ease-in-out;
         &:hover{
             opacity: 1;
+        }
+    }
+    .topic-category{
+        margin-top: calc(-.5em - 20px);
+        .badge-wrapper.bullet {
+            span.badge-category{
+                color: $secondary-text;
+            }
+            .badge-category-bg, .badge-category-parent-bg {
+
+            }
+        }
+        .discourse-tag.simple{
+            color: $secondary-text;
         }
     }
 }
