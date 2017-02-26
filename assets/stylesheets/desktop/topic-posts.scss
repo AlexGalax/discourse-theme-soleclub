@@ -125,9 +125,10 @@ nav.post-controls {
     }
     .topic-category{
         margin-top: calc(-.5em - 20px);
+        margin-left: 1em;
         .badge-wrapper.bullet {
             span.badge-category{
-                color: $secondary-text;
+                color: $secondary-text !important;
             }
             .badge-category-bg, .badge-category-parent-bg {
 
