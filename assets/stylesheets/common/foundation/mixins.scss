@@ -53,11 +53,10 @@
         color: $default-text;
     }
     &:hover{
-        color: $default-text;
+        color: $tertiary;
         background: none;
-        border-color: $tertiary;
         i{
-            color: $default-text;
+            color: $tertiary;
         }
     }
 }

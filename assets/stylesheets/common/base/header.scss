@@ -47,15 +47,13 @@
         -webkit-animation: fadeIn .3s;
         animation: fadeIn .3s;
     }
-    .menu-panel{
-        ul{
-            li.heading{
-                a{
-                    color: $default-text;
-                    &:hover{
-                        color: $secondary-color;
-                        background: none;
-                    }
+    ul{
+        li.heading{
+            a{
+                color: $default-text;
+                &:hover{
+                    color: $secondary-color;
+                    background: none;
                 }
             }
         }
