@@ -14,6 +14,11 @@
         padding: 0 .5em;
         border-radius: 1em;
     }
+    &:not(:last-child){
+        &:after{
+            content: "";
+        }
+    }
 }
 
 .badge-notification{
