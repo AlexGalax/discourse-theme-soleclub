@@ -32,6 +32,14 @@ hr{
 
 }
 
+#banner{
+    @include is-material(primary);
+    @include has-depth(primary);
+    a{
+        color: $primary-text;
+        font-weight: 700;
+    }
+}
 .badge-card{
     .badge-contents{
         .badge-icon{

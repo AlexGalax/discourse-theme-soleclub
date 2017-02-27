@@ -1,5 +1,19 @@
 .topic-list {
     @include table-material-style();
+    .topic-rating{
+        float: right;
+    }
+    .discourse-tags{
+        display: inline-block;
+    }
+}
+.discourse-tag.simple,
+.discourse-tag.simple:visited,
+.discourse-tag.simple:hover{
+    background: $disabled-color;
+    color: $discourse-tags;
+    padding: 0 .5em;
+    border-radius: 1em;
 }
 
 .badge-notification{
