@@ -7,13 +7,13 @@
         display: inline-block;
     }
 }
-.discourse-tag.simple,
-.discourse-tag.simple:visited,
-.discourse-tag.simple:hover{
-    background: $disabled-color;
-    color: $discourse-tags;
-    padding: 0 .5em;
-    border-radius: 1em;
+.discourse-tag.simple {
+    &, &:hover, &:visited {
+        background: $disabled-color;
+        color: $disabled-text;
+        padding: 0 .5em;
+        border-radius: 1em;
+    }
 }
 
 .badge-notification{
