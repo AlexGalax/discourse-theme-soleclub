@@ -1,8 +1,8 @@
 
 .gap{
     @include is-material(disabled);
-    width: calc(712px - 1em);
-    margin-left: 73px;
+    width: $topic-body-width;
+    margin-left: calc(45px + 2em);
     &.jagged-border{
         background-image: none;
         @include has-depth(disabled, 1px, 2px);
@@ -81,8 +81,13 @@
     @include is-material(default);
     @include has-depth();
     margin-bottom: 1em;
-    margin-left: 73px;
+    margin-left: calc(45px + 2em);
     width: $topic-body-width;
+    .small-action-desc{
+        padding-bottom: 0;
+        font-weight: 400;
+        font-style: italic;
+    }
 }
 nav.post-controls {
     button{

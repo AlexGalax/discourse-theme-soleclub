@@ -56,3 +56,13 @@ hr{
         width: calc(33.11% - 5px);
     }
 }
+
+.badge-wrapper.bullet {
+    .badge-category-parent-bg, .badge-category-bg{
+        height: 1em;
+    }
+    span.badge-category{
+        font-weight: 300;
+        color: $default-text !important;
+    }
+}

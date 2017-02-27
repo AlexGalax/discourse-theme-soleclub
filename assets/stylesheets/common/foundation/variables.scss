@@ -23,7 +23,7 @@
     // default (first/second)
     $default-color: $secondary;
     $default-text: $primary;
-    $default-color-light: dark-light-choose(darken($default-color, 5%), lighten($default-color, 5%));
+    $default-color-light: dark-light-choose(darken($default-color, 3%), lighten($default-color, 5%));
     $shadow-color: rgba(0,0,0,0.2);
 
     // error
