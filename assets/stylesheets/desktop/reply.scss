@@ -1,7 +1,12 @@
 #reply-control{
     @include is-material();
     @include has-shadow(2);
-
+    .d-editor-button-bar{
+        background: $default-color-light;
+    }
+    .wmd-controls{
+        bottom: 3em !important;
+    }
     &.edit-title{
         .contents{
             input#reply-title{

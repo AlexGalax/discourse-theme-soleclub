@@ -52,6 +52,15 @@ button:active{
         }
     }
 }
+#reply-control{
+    .d-editor-button-bar{
+        .btn{
+            @include no-shadow();
+            background: $default-color;
+            color: $default-text;
+        }
+    }
+}
 
 // timeline buttons round
 .timeline-container {

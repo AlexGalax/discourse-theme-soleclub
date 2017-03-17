@@ -99,6 +99,9 @@ nav.post-controls {
         &.create {
             color: $primary-color;
         }
+        &:active{
+            box-shadow: none;
+        }
     }
 }
 
@@ -112,6 +115,7 @@ nav.post-controls {
 #topic-closing-info{
     border: none;
 }
+
 #topic-title{
     h1{
         @include has-depth();
@@ -140,7 +144,7 @@ nav.post-controls {
             }
         }
         .discourse-tag.simple{
-            color: $secondary-text;
+
         }
     }
 }
