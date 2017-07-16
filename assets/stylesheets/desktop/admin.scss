@@ -7,9 +7,20 @@
             margin-bottom: 30px;
         }
     }
-}
-.admin-controls{
-    background-color: transparent;
+    .admin-container{
+        @include is-material(default);
+        @include has-depth();
+        table{
+            > tr:not(:last-child){
+                > td{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+    .admin-controls{
+        background-color: transparent;
+    }
 }
 
 .dashboard-stats{
@@ -17,10 +28,7 @@
     @include is-material(default);
     @include has-depth();
 }
-.admin-container{
-    @include is-material(default);
-    @include has-depth();
-}
+
 body{
     .boxed.white{
         background: none;
