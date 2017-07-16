@@ -7,14 +7,23 @@
             margin-bottom: 30px;
         }
     }
-    .admin-container{
+    .admin-container:first-child{
         @include is-material(default);
         @include has-depth();
         table{
             > tr:not(:last-child){
                 > td{
                     border-bottom: none;
-                    
+
+                }
+            }
+        }
+    }
+    .admin-container{
+        table{
+            > tr:not(:last-child){
+                > td{
+                    border-bottom: none;
                 }
             }
         }
