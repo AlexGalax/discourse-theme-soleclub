@@ -26,7 +26,7 @@ register_asset "stylesheets/desktop/category-list.scss"     # category list layo
 register_asset "stylesheets/desktop/topic-list.scss"        # topic list layout
 register_asset "stylesheets/desktop/topic-posts.scss"       # topic post layout
 register_asset "stylesheets/desktop/user.scss"              # user preferences
-register_asset "stylesheets/desktop/admin.scss"              # user preferences
+register_asset "stylesheets/desktop/admin.scss"             # admin panels
 
 # mobile changes
 

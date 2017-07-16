@@ -1,0 +1,18 @@
+.admin-content{
+    .admin-contents{
+        //background: #fff;
+    }
+}
+
+.dashboard-left{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.dashboard-right {
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+.dashboard-stats{
+    @include is-material(default);
+    @include has-depth();
+}

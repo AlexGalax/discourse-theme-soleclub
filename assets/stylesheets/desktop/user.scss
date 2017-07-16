@@ -24,6 +24,11 @@
         }
     }
 }
+
+.user-navigation, .user-preferences{
+    padding-left: 0;
+}
+
 div.ac-wrap{
     border: none;
     input[type=text]{
@@ -32,6 +37,9 @@ div.ac-wrap{
     }
 }
 .user-main{
+    .user-right{
+        padding-left: 30px;
+    }
     .about{
         .secondary{
             background: $default-color;
