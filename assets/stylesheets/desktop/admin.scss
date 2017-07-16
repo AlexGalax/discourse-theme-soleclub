@@ -3,16 +3,23 @@
         //background: #fff;
     }
 }
-
+.admin-contents{
+    margin: 0;
+    section.details{
+        @include is-material(default);
+        @include has-depth();
+    }
+}
 .dashboard-left{
-    box-sizing: border-box;
-    padding-left: 10px;
 }
 .dashboard-right {
-    box-sizing: border-box;
-    padding-right: 10px;
 }
 .dashboard-stats{
     @include is-material(default);
     @include has-depth();
+}
+body{
+    .boxed.white{
+        background: none;
+    }
 }
