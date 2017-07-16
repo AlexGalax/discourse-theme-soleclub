@@ -8,9 +8,16 @@
         }
     }
 }
-
+.admin-controls{
+    background-color: transparent;
+}
 
 .dashboard-stats{
+    box-sizing: border-box;
+    @include is-material(default);
+    @include has-depth();
+}
+.admin-container{
     @include is-material(default);
     @include has-depth();
 }
