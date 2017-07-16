@@ -1,19 +1,15 @@
 .admin-content{
     .admin-contents{
-        //background: #fff;
+        margin: 0;
+        section.details{
+            @include is-material(default);
+            @include has-depth();
+            margin-bottom: 30px;
+        }
     }
 }
-.admin-contents{
-    margin: 0;
-    section.details{
-        @include is-material(default);
-        @include has-depth();
-    }
-}
-.dashboard-left{
-}
-.dashboard-right {
-}
+
+
 .dashboard-stats{
     @include is-material(default);
     @include has-depth();
